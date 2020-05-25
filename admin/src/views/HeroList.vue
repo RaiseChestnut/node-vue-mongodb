@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>物品列表</h1>
+    <h1>英雄列表</h1>
     <el-table :data="items">
       <el-table-column prop="_id" label="ID" width="240"></el-table-column>
       <el-table-column prop="name" label="物品名称"></el-table-column>
@@ -15,7 +15,7 @@
           <el-button
             type="text"
             size="small"
-            @click="$router.push(`/items/edit/${scope.row._id}`)"
+            @click="$router.push(`/heroes/edit/${scope.row._id}`)"
           >编辑</el-button>
           <el-button type="text" size="small" @click="remove(scope.row)">删除</el-button>
         </template>
